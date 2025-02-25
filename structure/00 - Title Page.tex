@@ -1,0 +1,40 @@
+\begin{titlepage}
+        \setlength{\parindent}{0pt}
+        \vspace{8cm}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.2\linewidth]{images/EscudoSinAnimacion.png}
+
+\end{figure}
+        \begin{center}
+        
+        \begin{tikzpicture}
+        \node[align=left]
+            (info) at (0mm,0mm){
+                \Huge
+                Cuadernillo de Matemática de 2do año};
+        \node[align=left]
+            (info) at (0mm,-10mm){
+                \large
+                Escuela Tecnica Nº35 - "Ing. E. Latzina".};
+        \end{tikzpicture}
+        \end{center}
+
+        \vspace{5cm}
+        \vfill
+
+        \normalsize
+        \begin{tikzpicture}
+        \node[align=left] (info) at (2mm,0mm){
+        Prof. Rodrigo Serantes \& Prof. Alejandro Ceccheto\\
+        alejandro.ceccheto@bue.edu.ar\\
+        Departamento De Exactas\\
+        Argentina\\
+        \today};
+        
+        \draw
+            ($(info.north west) + (-2mm,-1mm)$) --
+            ($(info.south west) + (-2mm,1mm)$);
+        
+        \end{tikzpicture}
+\end{titlepage}

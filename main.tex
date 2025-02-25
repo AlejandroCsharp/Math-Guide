@@ -1,0 +1,33 @@
+% This work is licensed under the GNU aGPL v3 by AlejandroCsharp
+% https://github.com/AlejandroCsharp
+\documentclass[12pt,a4paper,onecolumn,titlepage]{book}
+
+\usepackage{eso-pic,graphicx,wrapfig}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[
+    backend=biber,
+    style=alphabetic
+]{biblatex}
+\addbibresource{ref.bib}
+
+\setlength{\headheight}{14.5pt}
+
+\begin{document}
+
+
+\include{structure/00 - Title Page}
+\include{structure/01 - Table of Contents}
+
+\pagestyle{fancy}
+
+\fancyfoot[C]{\thepage}
+
+
+\include{chapters/00 - contract}
+\include{chapters/01 - Numeros Reales}
+\include{chapters/02 - Trigonometria}
+\include{chapters/03 - Funciones}
+
+\printbibliography
+\end{document}
